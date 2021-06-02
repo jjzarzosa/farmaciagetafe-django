@@ -23,7 +23,7 @@ def add_cart(request, product_id):
                 product_variation.append(variation)
             except:
                 pass
-    product = Product.objects.get(id=product_id) #get the product
+    #product = Product.objects.get(id=product_id) #get the product
     try:
         cart = Cart.objects.get(cart_id=_cart_id(request)) # get the cart using the cart_id present in the session
     except Cart.DoesNotExist:
@@ -44,6 +44,8 @@ def add_cart(request, product_id):
             existing_variation = item.variations.all()
             ex_var_list.append(list(existing_variation))
             id.append(item.id)
+
+
         if product_variation in ex_var_list:
             print("añadir uno")
             # increase the cart item quantity
