@@ -8,7 +8,7 @@ class MyAccountManager(BaseUserManager):
         if not email:
             raise ValueError('El usuario tiene que añadir un email')
 
-        if not apodo:
+        if not username:
             raise ValueError('El usuario tiene que añadir un apodo')
         
         user = self.model(
