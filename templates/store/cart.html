@@ -70,8 +70,8 @@
 	</td>
 	<td> 
 		<div class="price-wrap"> 
-			<var class="price">${{ cart_item.sub_total }}</var> 
-			<small class="text-muted"> ${{ cart_item.product.price }} producto </small> 
+			<var class="price"> {{ cart_item.sub_total }} EUR </var> 
+			<small class="text-muted"> {{ cart_item.product.price }} EUR cada producto </small> 
 		</div> <!-- price-wrap .// -->
 	</td>
 	<td class="text-right"> 
@@ -89,7 +89,7 @@
 		<div class="card">
 		<div class="card-body">
 			<dl class="dlist-align">
-			  <dt>Precio total:</dt>
+			  <dt>Total productos:</dt>
 			  <dd class="text-right">${{total}}</dd>
 			</dl>
 			<dl class="dlist-align">
@@ -97,7 +97,7 @@
 			  <dd class="text-right"> ${{tax}}</dd>
 			</dl>
 			<dl class="dlist-align">
-			  <dt>Total:</dt>
+			  <dt>Precio Total:</dt>
 			  <dd class="text-right text-dark b"><strong>${{grand_total}}</strong></dd>
 			</dl>
 			<hr>
