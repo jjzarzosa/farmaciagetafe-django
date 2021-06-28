@@ -108,11 +108,10 @@
       	</td>
       	<td>
       		<div class="price-wrap">
-      			<var class="price">$ {{ cart_item.sub_total }}</var>
-      			<small class="text-muted"> $ {{ cart_item.product.price }} cada uno </small>
+      			<var class="price"> {{ cart_item.sub_total }} EUR</var>
+      			<small class="text-muted">  {{ cart_item.product.price }} EUR cada uno </small>
       		</div> <!-- price-wrap .// -->
-      	</td>
-
+      	</td> 
       </tr>
       {% endfor %}
 
